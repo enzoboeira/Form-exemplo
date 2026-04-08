@@ -1,0 +1,43 @@
+p {
+    color: #e4e4e4;
+    background-color: #ff0000;
+}
+
+h1 {
+    color: #0026ff;
+    background-color: #000000;
+}
+
+body {
+    background-color: #000000;
+}
+
+#nome{
+    background-color: #695f00;
+    font-weight: bold;
+    color: #000000;
+}
+
+.texto{
+    background-color: #0d00ff;
+}
+
+.cor-de-fundo{
+    background-color: #ff00cc;
+}
+
+.div-por-fora{
+    background-color: #4c00ff;
+    display: flex;
+}
+
+.div-por-dentro{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 50%;
+    position: relative;
+}
+
+.texto-centralizado{
+    text-align: center;
+}
