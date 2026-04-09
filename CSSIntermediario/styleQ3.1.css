@@ -5,6 +5,7 @@
   
   #outer-box {
     background-color: purple;
+    border: 20px solid red;
   }
   
   .inner-box {
