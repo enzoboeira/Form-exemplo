@@ -1,0 +1,20 @@
+.box {
+    border: 10px solid purple;
+    margin: 10px;
+  }
+  
+  #outer-box {
+    background-color: purple;
+  }
+  
+  .inner-box {
+    background-color: red;
+  }
+  
+  .box > p {
+    color: yellow;
+  }
+  
+  .inner-box .white-text {
+    color: white;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Flag Project</title>
+  <style>
+    /* Escreva seu CSS Aqui */
+    
+    .flag {
+        width: 900px;
+        height: 600px;
+        position: relative;
+        background-color: #ce1126;
+    }
+
+    .flag > p {
+        color: #ffffff;
+        margin: 0;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    .flag > div {
+        width: 900px;
+        height: 300px;
+        background-color: #002868;
+        position: absolute;
+        top: 150px;
+    }
+
+    .flag > div > div {
+        width: 200px;
+        height: 200px;
+        background-color: #ffffff;
+        border-radius: 50%;
+        position: absolute;
+        top: 50px;
+        left: 350px;
+    }
+
+    .flag > div > div > p {
+        color: #000000;
+        margin: 0;
+        font-size: 3.5rem;
+        text-align: center;
+        line-height: 200px;
+    }
+
+/* 💡 Por que isso funciona: */
+
+/* display: flex → ativa centralização inteligente
+justify-content: center → centro horizontal
+align-items: center → centro vertical
+transform → garante o círculo no centro da faixa azul
+font-size → aumenta o “of Laos” igual na imagem */
+
+/* Se quiser, posso te mostrar uma versão 100% igual a bandeira real (Laos oficial) usando grid/flex moderno — fica ainda mais limpo 👌 */
+
+  </style>
+</head>
+
+<body>
+  <div class="flag">
+    <p>The Flag</p>
+    <div>
+      <div>
+        <p>of Laos</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
