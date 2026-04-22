@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Navbar</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    nav {
+      background-color: #f4c400;
+      padding: 20px;
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    li:first-child {
+      font-weight: bold;
+      font-size: 28px;
+      margin-right: 20px;
+    }
+
+    a {
+      text-decoration: underline;
+      color: blue;
+      font-size: 22px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <ul>
+      <li>Page Layout Methods</li>
+      <li><a href="#">HTML Table</a></li>
+      <li><a href="#">Inline-Block</a></li>
+      <li><a href="#">Absolute Positioning</a></li>
+      <li><a href="#">Float</a></li>
+      <li><a href="#">Flexbox</a></li>
+    </ul>
+  </nav>
+
+</body>
+</html>
