@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .pricing-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: center;
+        align-items: stretch;
+        width: 100%;
+        max-width: 1200px;
+      }
+
+      .pricing-plan {
+        background-color: #f0f0f0;
+        border-radius: 12px;
+        padding: 32px 24px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        flex: 1;
+      }
+
+      .plan-title {
+        font-size: 1.2rem;
+        font-weight: 700;
+      }
+
+      .plan-price {
+        font-size: 2.4rem;
+        font-weight: 700;
+      }
+
+      .plan-features {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+        font-size: 0.95rem;
+      }
+
+      .plan-button {
+        margin-top: 8px;
+        background-color: #f47c20;
+        color: #ffffff;
+        border: none;
+        border-radius: 6px;
+        padding: 10px 28px;
+        font-size: 1rem;
+        font-family: "Sono", sans-serif;
+        font-weight: 700;
+        cursor: pointer;
+        transition: background-color 0.2s;
+      }
+
+      .plan-button:hover {
+        background-color: #d9660f;
+      }
+
+      /* Tela pequena: empilha os cards */
+      @media (max-width: 1250px) {
+        .pricing-container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .pricing-plan {
+          width: 100%;
+          max-width: 460px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-plan">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$11.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li>
+          <li>✅ 1 User</li>
+          <li>🚫 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage</li>
+          <li>✅ 5 Users</li>
+          <li>✅ Phone &amp; Email Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+      <div class="pricing-plan">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li>
+          <li>✅ 10 Users</li>
+          <li>✅ 24/7 Support</li>
+        </ul>
+        <button class="plan-button">Sign Up</button>
+      </div>
+    </div>
+  </body>
+</html>
